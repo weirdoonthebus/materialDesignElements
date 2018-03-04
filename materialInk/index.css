@@ -1,0 +1,48 @@
+html, body {
+  align-items: center;
+  background: #E8E8E8;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.paper{
+  width: 20em;
+  height: 20em;
+  box-shadow: 0 0 3em rgba(0,0,0,0.3);
+  position: relative;
+  margin: 3em;
+  overflow: hidden;
+  -webkit-transition-property: box-shadow;
+  -moz-transition-property: box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.ink{
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  background: aquamarine;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition-property: width,height,top,left,opacity;
+  -moz-transition-property: width,height,top,left,opacity;
+  -o-transition-property: width,height,top,left,opacity;
+  transition-property: width,height,top,left,opacity;
+  -webkit-transition-duration: .5s;
+  -moz-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}

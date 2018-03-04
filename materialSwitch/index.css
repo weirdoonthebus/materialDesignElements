@@ -1,0 +1,101 @@
+html, body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E8E8E8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transition-property: none;
+  transition-property: none;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.field {
+  display: block;
+  padding: 8px;
+  position: relative;
+}
+.field input {
+  position: relative;
+}
+.field input.switch {
+  cursor: default;
+  display: block;
+  height: 24px;
+  width: 36px;
+}
+.field input.switch::after, .field input.switch::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+.field input.switch::before {
+  background: #ccc;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) inset;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) inset;
+  height: 12px;
+  left: 0;
+  top: 6px;
+  -webkit-transition-property: background, -webkit-box-shadow;
+  transition-property: background, -webkit-box-shadow;
+  transition-property: background, box-shadow;
+  transition-property: background, box-shadow, -webkit-box-shadow;
+  width: 36px;
+}
+.field input.switch::after {
+  background: #FFF;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14), 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14), 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  height: 24px;
+  left: -6px;
+  top: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-property: background, -webkit-transform;
+  transition-property: background, -webkit-transform;
+  transition-property: background, transform;
+  transition-property: background, transform, -webkit-transform;
+  width: 24px;
+}
+.field input.switch:checked:after {
+  background: #ff5722;
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+}
+.field input.switch:checked:before {
+  background: rgba(255, 87, 34, 0.5);
+  -webkit-box-shadow: 0 2px 4px rgba(191, 54, 12, 0.7) inset;
+          box-shadow: 0 2px 4px rgba(191, 54, 12, 0.7) inset;
+}
+.field .hide {
+  background: #E8E8E8;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}

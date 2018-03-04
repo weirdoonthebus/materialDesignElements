@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Multi-Option FAB</title>
+</head>
+<body>
+	<!--fab element-->
+	<div id="actions">
+		<div class="fab_group">
+			<button id="add_text" class="fab" type="button">
+				<svg fill="#FFF" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<defs>
+						<path d="M24 24H0V0h24v24z" id="a"/>
+					</defs>
+					<clipPath id="b">
+						<use overflow="visible" xlink:href="#a"/>
+					</clipPath>
+					<path clip-path="url(#b)" d="M2.5 4v3h5v12h3V7h5V4h-13zm19 5h-9v3h3v7h3v-7h3V9z"/>
+				</svg>
+			</button>
+			<button id="add_img" class="fab" type="button">
+				<svg fill="#FFF" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="12" cy="12" r="3.2"/>
+					<path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+					<path d="M0 0h24v24H0z" fill="none"/>
+				</svg>
+			</button>
+			<button id="add_video" class="fab" type="button">
+				<svg fill="#FFF" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 0h24v24H0z" fill="none"/>
+					<path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+				</svg>
+			</button>
+		</div>
+		<button id="fab" class="fab" type="button">
+			<svg fill="#fff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+				<path d="M0 0h24v24H0z" fill="none"/>
+			</svg>
+		</button>
+	</div>
+	<!--include css and javascript-->
+	<link rel="stylesheet" href="./index.css">
+	<script async defer type="text/javascript" src="./index.js"></script>
+</body>
+</html>

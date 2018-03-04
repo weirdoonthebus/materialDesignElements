@@ -1,0 +1,125 @@
+html,
+body {
+  background: #E8E8E8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  height: 100%;
+  margin: 0px;
+  padding: 8px;
+  width: 100%;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-transition-property: none;
+  transition-property: none;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.card {
+  background: #FFF;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.07), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.07), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  color: #252525;
+  margin: 50vh 128px 300vh 128px;
+  padding: 8px 16px 16px 16px;
+  position: relative;
+}
+.card * {
+  margin: 0;
+}
+.card * + * {
+  margin-top: 16px;
+}
+
+.fab {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #00BCD4;
+  border: 0;
+  border-radius: 2em;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14), 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14), 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  height: 4em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: 0;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+  -webkit-transition-duration: .12s;
+          transition-duration: .12s;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+  width: 4em;
+  will-change: transform;
+  z-index: 2;
+}
+.fab:hover {
+  -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 8px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 8px 8px 0 rgba(0, 0, 0, 0.1);
+  -webkit-filter: brightness(1.15);
+          filter: brightness(1.15);
+  -webkit-transform: scale(1.02) translateY(-3px);
+          transform: scale(1.02) translateY(-3px);
+}
+.fab:active {
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  -webkit-filter: brightness(0.85);
+          filter: brightness(0.85);
+  -webkit-transform: scale(0.98) translateY(2px);
+          transform: scale(0.98) translateY(2px);
+}
+.fab svg {
+  fill: #E0F7FA;
+  height: 2em;
+  pointer-events: none;
+  width: 2em;
+}
+
+#fab {
+  font-size: 18px;
+}
+
+#action {
+  position: absolute;
+  right: -112px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-duration: .05s;
+          transition-duration: .05s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+::-moz-selection {
+  background: #00BCD4;
+  color: #E0F7FA;
+}
+
+::selection {
+  background: #00BCD4;
+  color: #E0F7FA;
+}

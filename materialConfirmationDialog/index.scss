@@ -1,0 +1,67 @@
+html, body {
+  background: #e8e8e8;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+  cursor: default;
+}
+* {
+  box-sizing: inherit;
+}
+
+.dialog {
+  animation-name: add;
+  animation-duration: .4s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+  background: #fff;
+  width: 400px;
+  height: 200px;
+  border-radius: 3px;
+  position: absolute;
+  left: calc(50% - 200px);
+  top: calc(50% - 100px);
+  box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,0.12),0 2px 4px rgba(0,0,0,0.24);
+  padding: 16px;
+  color: #212121;
+  h3 {
+    margin: 0;
+    font-size: 20px;
+    height: 24px;
+    line-height: 24px;
+  }
+  p {
+    margin: 16px 0;
+  }
+  .action-group {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 16px 16px 16px;
+    button {
+      float: right;
+      font-family: inherit;
+      background: rgba(0,0,0,0);
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-left: 8px;
+      &:first-child {
+        color: #03A9F4;
+      }
+    }
+  }
+}
+@keyframes add {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

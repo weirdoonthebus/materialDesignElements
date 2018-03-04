@@ -1,0 +1,69 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #E8E8E8;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+a {
+  color: #007bed;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover, a:focus {
+  color: #159bff;
+}
+a:active {
+  color: #3d5afe;
+}
+
+.snackbar {
+  background: #323232;
+  color: white;
+  padding: 1em;
+  border-radius: 0.25em;
+  line-height: 1em;
+  position: fixed;
+  bottom: 1.5em;
+  left: 1.5em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+.snackbar a {
+  padding-left: 2em;
+}
+
+.fab {
+  background: #007bed;
+  border: 0;
+  outline: 0;
+  padding: 1.5em;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-property: background,box-shadow;
+  will-change: background,box-shadow;
+}
+.fab svg {
+  fill: #E8E8E8;
+  width: 2em;
+  height: 2em;
+}
+.fab:hover, .fab:focus {
+  background: #159bff;
+  box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.fab:active {
+  background: #3d5afe;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+}

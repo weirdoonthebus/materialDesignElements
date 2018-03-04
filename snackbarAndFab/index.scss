@@ -1,0 +1,81 @@
+$background:#E8E8E8;
+$main:#007bed;
+$highlight:#159bff;
+$lowlight:#3d5afe;
+$cta:$main;
+$pending:$highlight;
+$active:$lowlight;
+$shad:0 2px 5px 0 rgba(0, 0, 0, 0.26);
+$shadlift:0 10px 6px 0 rgba(0, 0, 0, 0.20);
+$shadhide:0 2px 2px 0 rgba(0, 0, 0, 0.30);
+html,body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: $background;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+*{
+  box-sizing: inherit;
+}
+
+a{
+  color: $cta;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover,&:focus{
+    color: $pending;
+  }
+  &:active{
+    color: $active;
+  }
+}
+
+.snackbar{
+  background: #323232;
+  color: rgba(255,255,255,87);
+  padding: 1em;
+  border-radius: 0.25em;
+  line-height: 1em;
+  position: fixed;
+  bottom: 1.5em;
+  left: 1.5em;
+  box-shadow: $shad;
+
+  a{
+    padding-left: 2em;
+  }
+}
+
+.fab{
+  background:$main;
+  border: 0;
+  outline: 0;
+  padding: 1.5em;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  box-shadow: $shad;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function:ease;
+  transition-property: background,box-shadow;
+  will-change: background,box-shadow;
+
+  svg{
+    fill: $background;
+    width: 2em;
+    height: 2em;
+  }
+
+  &:hover,&:focus{
+    background: $pending;
+    box-shadow: $shadlift;
+  }
+  &:active{
+    background: $active;
+    box-shadow: $shadhide;
+  }
+}
