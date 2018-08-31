@@ -11,4 +11,5 @@ Donate
 
 If you found these to be useful please consider sending a dollar or two as a thanks :)
 
-[PayPal](https://paypal.me/sammurphey)
+[PayPal](https://paypal.me/sammurphey) · [Venmo](https://venmo.com/sammurphey) · [KoFi](https://kofi.com/sammurphey)
+
